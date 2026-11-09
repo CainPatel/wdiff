@@ -1,5 +1,9 @@
 # wdiff
 
+[![tests](https://github.com/CainPatel/wdiff/actions/workflows/tests.yml/badge.svg)](https://github.com/CainPatel/wdiff/actions/workflows/tests.yml)
+[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](pyproject.toml)
+
 **`git diff` for model weights.** Give it two checkpoints of the same model, for example a base model and a fine-tune, patch or "uncensored" version you downloaded. It tells you what was actually changed, in a commit message a person can read:
 
 - **Where:** which tensors and layers changed, and how many weights.
@@ -8,6 +12,50 @@
 - **Confidence:** how much of that the evidence supports.
 
 A model card says what an edit was *meant* to do. wdiff checks what the weights say.
+
+## Install
+
+```bash
+uv tool install "wdiff[summarize] @ git+https://github.com/CainPatel/wdiff"
+# or: pip install "wdiff[summarize] @ git+https://github.com/CainPatel/wdiff"
+```
+
+Python 3.11+. Not on PyPI yet. Models are downloaded through the Hugging Face cache; for gated models such as Llama, accept the license on Hugging Face and run `hf auth login` first.
+
+## Try it: where did the weights change? (CPU, no API key, about 5 seconds)
+
+```bash
+wdiff structural Qwen/Qwen3.5-0.8B RikiyaT/Qwen3.5-0.8B-weight-space-programming --out reports/qwen --top 3
+wdiff directional --out reports/qwen
+```
+
+Real output, trimmed (the first run also downloads both models, about 1.6 GB each):
+
+```text
+tensor                                                 shape    changed  cols  frob_ratio    cosine
+model.language_model.layers.15.mlp.down_proj.weight  1024x3584   65,260    64   1.064e-01  0.994372
+model.language_model.layers.19.mlp.down_proj.weight  1024x3584   64,928    64   8.106e-02  0.996724
+
+changed 130,188 of 873,438,784 weights (0.0149%) in 2 of 488 tensors
+
+tensor                                               axis   k  rank  σ1 energy      α  resid α
+model.language_model.layers.15.mlp.down_proj.weight  cols  64     1   0.999994  6.000  1.946e-03
+model.language_model.layers.19.mlp.down_proj.weight  cols  64     1   0.999991  6.000  1.826e-03
+
+cosine between top directions (sign is arbitrary):
+  layers.15.mlp.down_proj  vs  layers.19.mlp.down_proj: +0.849005
+```
+
+Read it as: only 2 of 488 tensors changed, 64 columns each. Each change is rank 1, so one direction was edited, scaled by α = 6. The two layers edited similar but not identical directions.
+
+## Full diff: what does the model now do differently?
+
+```bash
+export ANTHROPIC_API_KEY=...   # only the final summarize step needs it
+wdiff all BASE_MODEL EDITED_MODEL --out reports/my-diff --directions directions/my-base
+```
+
+`BASE_MODEL` and `EDITED_MODEL` are Hugging Face ids or local folders of safetensors files with the same architecture. `all` computes the base model's refusal direction, runs both models on the 90 built-in probe prompts, and writes `COMMIT.md`. The behavioral stage is the slow part: about 1 hour for Llama-3.2-1B and 2 hours for Qwen3.5-0.8B (a thinking model) on an Apple M5 Max. Each stage can also run alone; see `wdiff --help`.
 
 ## Why it's useful
 
@@ -56,22 +104,27 @@ The Llama message is in [`reports/llama3.2-1b-abliterated/COMMIT.md`](reports/ll
 | Behavioral | What does the model do differently? | Both models answer the same 90 prompts (math, harmful, harmless) with the same seed, and wdiff compares their rates. |
 | Summarizer | What should the commit message say? | One Claude call turns the three reports into a message. It only sees statistics, never weights. Any number in the message that isn't in the reports gets the message rejected. |
 
-## Quick start
-
-```bash
-uv sync --extra summarize
-export ANTHROPIC_API_KEY=...   # only the final summarize step needs it
-uv run wdiff all BASE_MODEL EDITED_MODEL --out reports/my-diff --directions directions/my-base
-```
-
-`BASE_MODEL` and `EDITED_MODEL` are Hugging Face ids or local folders with safetensors files. Both models must have the same architecture. Each stage can also run alone: `wdiff structural`, `directional`, `direction compute`, `behavioral`, `summarize`. The structural and directional stages take minutes on a laptop. The behavioral stage generates text with both models: about 1 hour for Llama-3.2-1B and 2 hours for Qwen3.5-0.8B on an M5 Max.
-
 ## Limits
 
 - Both checkpoints must have the same architecture (same tensor names and shapes).
 - The probe sets are small (20–50 prompts), so only large behavioral changes are reliable.
 - It describes *what* changed, not *how* or *why* it was changed.
 - `samples/refusal_20.jsonl` redacts completions where a model went along with a harmful prompt. Scores and a sha256 of each original are kept.
+
+## Contributing
+
+Issues and pull requests are welcome, especially reports from running wdiff on other model pairs. To develop:
+
+```bash
+git clone https://github.com/CainPatel/wdiff && cd wdiff
+uv sync --extra summarize
+uv run pytest        # tests on real checkpoints skip unless the models are in your HF cache
+uv run ruff check .
+```
+
+## Citation
+
+If you use wdiff, please cite it with GitHub's "Cite this repository" button ([CITATION.cff](CITATION.cff)).
 
 ## Detailed results
 
@@ -96,7 +149,7 @@ uv run pytest
 
 ### Qwen: behavioral probes (a recorded failure)
 
-Probes: 50 GSM8K train problems, 20 harmful and 20 harmless held-out prompts (`probes/`). Thinking on, temperature 0.6, top_p 0.95, top_k 20, presence penalty 1.5, one sample per prompt, seed 0. `loop` = hit the token cap OR some 20-token window occurs 3 or more times.
+Probes: 50 GSM8K train problems, 20 harmful and 20 harmless held-out prompts (`src/wdiff/probes/`). Thinking on, temperature 0.6, top_p 0.95, top_k 20, presence penalty 1.5, one sample per prompt, seed 0. `loop` = hit the token cap OR some 20-token window occurs 3 or more times.
 
 The spec's gate is that math_50 loop_rate drops by 20 or more points. It fails at every cap tried:
 
@@ -126,6 +179,6 @@ uv run wdiff all meta-llama/Llama-3.2-1B-Instruct mylesgoose/Llama-3.2-1B-Instru
 
 ## Credits and license
 
-Prompt subsets in `data/refusal_direction/` are sampled from [andyrdt/refusal_direction](https://github.com/andyrdt/refusal_direction) (Apache-2.0); see `SOURCE.json`. Probes are sampled from GSM8K (MIT) and the same repo's test splits; see `probes/SOURCE.json`.
+Prompt subsets in `src/wdiff/data/refusal_direction/` are sampled from [andyrdt/refusal_direction](https://github.com/andyrdt/refusal_direction) (Apache-2.0); see `SOURCE.json`. Probes are sampled from GSM8K (MIT) and the same repo's test splits; see `src/wdiff/probes/SOURCE.json`.
 
 Apache-2.0. See [LICENSE](LICENSE).

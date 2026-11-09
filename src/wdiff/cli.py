@@ -12,6 +12,8 @@ from wdiff import __version__
 from wdiff.load import CheckpointMismatch, iter_pairs, resolve
 from wdiff.structural import diff, format_report, rollup
 
+PROBES = Path(__file__).parent / "probes"  # shipped with the package
+
 
 def run_structural(args: argparse.Namespace) -> int:
     started = datetime.now(UTC).isoformat()
@@ -282,7 +284,7 @@ def main(argv: list[str] | None = None) -> int:
     s.add_argument("base", help="local directory or Hugging Face repo id")
     s.add_argument("edited", help="local directory or Hugging Face repo id")
     s.add_argument("--out", required=True)
-    s.add_argument("--probes", default="probes")
+    s.add_argument("--probes", default=str(PROBES), help="folder of <set>.jsonl probe files")
     s.add_argument("--max-new-tokens", type=int, default=1024)
     s.add_argument("--max-prompts", type=int, default=50, help="per probe set")
     s.add_argument("--device", default="auto", help="auto | cuda | mps | cpu")
@@ -299,7 +301,7 @@ def main(argv: list[str] | None = None) -> int:
     s.add_argument("edited", help="local directory or Hugging Face repo id")
     s.add_argument("--out", required=True)
     s.add_argument("--directions", required=True, help="dir for (or holding) refusal.npy")
-    s.add_argument("--probes", default="probes")
+    s.add_argument("--probes", default=str(PROBES), help="folder of <set>.jsonl probe files")
     s.add_argument("--max-new-tokens", type=int, default=1024)
     s.add_argument("--max-prompts", type=int, default=50)
     s.add_argument("--device", default="auto")

@@ -12,7 +12,7 @@ where layer L's mlp.down_proj writes, so r_L lives in the same space as the edit
 top direction v_L, and cos(v_L, r_L) is meaningful. Sign of v is arbitrary: compare |cos|.
 
 Prompts: a fixed-seed sample of the refusal_direction repo's train splits, vendored in
-data/refusal_direction/ (Apache-2.0).
+src/wdiff/data/refusal_direction/ (Apache-2.0), shipped with the package.
 
 This module imports transformers lazily, so structural and directional stay light.
 """
@@ -26,8 +26,7 @@ from pathlib import Path
 import numpy as np
 import torch
 
-# ponytail: assumes a source checkout (uv's editable install); package data if wdiff ships as a wheel.
-DATA = Path(__file__).resolve().parents[2] / "data" / "refusal_direction"
+DATA = Path(__file__).parent / "data" / "refusal_direction"
 
 
 def load_prompts(kind: str) -> list[str]:

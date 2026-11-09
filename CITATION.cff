@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use wdiff, please cite it as below."
+title: "wdiff: a semantic diff for model weights"
+type: software
+authors:
+  - given-names: Cain
+    family-names: Patel
+repository-code: "https://github.com/CainPatel/wdiff"
+license: Apache-2.0
+version: 0.1.0
+date-released: 2026-11-09
+keywords:
+  - model diff
+  - interpretability
+  - model editing
+  - abliteration
