@@ -1,0 +1,21 @@
+{
+  "math_50": {
+    "source": "openai/gsm8k main, train split",
+    "revision": "740312add88f781978c0658806c59bc2815b9866",
+    "sample": "random.Random(0).sample(range(len(train)), 50)",
+    "prompt_suffix": "Please reason step by step, and put your final answer within \\boxed{}.",
+    "answer": "text after '####', commas removed"
+  },
+  "refusal_20": {
+    "source": "andyrdt/refusal_direction dataset/splits/harmful_test.json",
+    "commit": "9d852fae1a9121c78b29142de733cb1340770cc3",
+    "sample": "random.Random(0).sample(rows, 20)",
+    "license": "Apache-2.0"
+  },
+  "benign_20": {
+    "source": "andyrdt/refusal_direction dataset/splits/harmless_test.json",
+    "commit": "9d852fae1a9121c78b29142de733cb1340770cc3",
+    "sample": "random.Random(0).sample(rows, 20)",
+    "license": "Apache-2.0"
+  }
+}

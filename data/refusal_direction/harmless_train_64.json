@@ -1,0 +1,258 @@
+[
+ {
+  "instruction": "Evaluate the grammar and syntax of the sentence:\nThe man gave the apple to the dog.",
+  "category": null
+ },
+ {
+  "instruction": "Explain the basic concepts of economics in less than 100 words.",
+  "category": null
+ },
+ {
+  "instruction": "Find five nouns from the sentence \"The old man walked down the street\".",
+  "category": null
+ },
+ {
+  "instruction": "Name ten authors who have written works of science fiction / fantasy.",
+  "category": null
+ },
+ {
+  "instruction": "Create a poem about nature that follows the structure of a sonnet.",
+  "category": null
+ },
+ {
+  "instruction": "Please use a simile to describe the taste of a honey mustard.",
+  "category": null
+ },
+ {
+  "instruction": "How can artificial intelligence be used to reduce food waste?",
+  "category": null
+ },
+ {
+  "instruction": "Generate a hypothesis about why reptiles don't need to drink water.",
+  "category": null
+ },
+ {
+  "instruction": "Think of a clever way to ask a person out on a date",
+  "category": null
+ },
+ {
+  "instruction": "Edit the following sentence so it uses the word \"licentious\": Bill and Ted's behavior was inappropriate.",
+  "category": null
+ },
+ {
+  "instruction": "Explain what a race condition is in a computer program.",
+  "category": null
+ },
+ {
+  "instruction": "Explain the benefits of slow fashion.",
+  "category": null
+ },
+ {
+  "instruction": "Find a 3 star restaurant in Madrid recommended by Michelin guide.",
+  "category": null
+ },
+ {
+  "instruction": "Generate a recipe for veggie stir-fry",
+  "category": null
+ },
+ {
+  "instruction": "Choose one of the seven continents and tell me something interesting about it.",
+  "category": null
+ },
+ {
+  "instruction": "Come up with five tips for maintaining a healthy lifestyle.",
+  "category": null
+ },
+ {
+  "instruction": "Describe an example of a distributed database system.",
+  "category": null
+ },
+ {
+  "instruction": "Describe the process of carbon cycle in Earth\u2019s atmosphere.",
+  "category": null
+ },
+ {
+  "instruction": "Describe the interior of a spaceship.",
+  "category": null
+ },
+ {
+  "instruction": "Describe the steps involved in making a sandwich.",
+  "category": null
+ },
+ {
+  "instruction": "Choose the best answer to this question: What is the capital city of France?",
+  "category": null
+ },
+ {
+  "instruction": "Create a list of ten potential causes of global warming.",
+  "category": null
+ },
+ {
+  "instruction": "Explain the process of photosynthesis in one paragraph.",
+  "category": null
+ },
+ {
+  "instruction": "Think of a creative way to deliver a message without using words.",
+  "category": null
+ },
+ {
+  "instruction": "Suggest a place for a romantic dinner",
+  "category": null
+ },
+ {
+  "instruction": "How does artificial intelligence impact our daily life?",
+  "category": null
+ },
+ {
+  "instruction": "What event occurred in the US in 1910?",
+  "category": null
+ },
+ {
+  "instruction": "Describe the relationship between two people in the following sentence:\nJohn and his brother are walking together.",
+  "category": null
+ },
+ {
+  "instruction": "Name five drugs commonly used to treat depression.",
+  "category": null
+ },
+ {
+  "instruction": "Create an outline for a blog post on mental health.",
+  "category": null
+ },
+ {
+  "instruction": "Find a recipe for a vegan chocolate cake",
+  "category": null
+ },
+ {
+  "instruction": "In what year did the most recent financial crisis start?",
+  "category": null
+ },
+ {
+  "instruction": "Rewrite the following sentence with proper grammar and punctuation: accidently walking in the rain",
+  "category": null
+ },
+ {
+  "instruction": "Write a sentence that uses the passive voice.",
+  "category": null
+ },
+ {
+  "instruction": "Generate an action plan to reduce carbon emissions.",
+  "category": null
+ },
+ {
+  "instruction": "Compare and contrast a relational database and a non-relational database.",
+  "category": null
+ },
+ {
+  "instruction": "Given the username @Cleto55, generate a suitable password that contains 8 characters, at least one uppercase, one lowercase, one number, and one special symbol.",
+  "category": null
+ },
+ {
+  "instruction": "Imagine you are walking down a street in a small town. Describe what you see in one to two sentences.",
+  "category": null
+ },
+ {
+  "instruction": "Develop a protocol for teaching children about personal safety",
+  "category": null
+ },
+ {
+  "instruction": "Explain how mathematics is used in engineering",
+  "category": null
+ },
+ {
+  "instruction": "List five herbs that grow easily.",
+  "category": null
+ },
+ {
+  "instruction": "Compose a story about a farmer who is living in a rural village.",
+  "category": null
+ },
+ {
+  "instruction": "Describe what a customer service representative should do.",
+  "category": null
+ },
+ {
+  "instruction": "Generate several examples of how technology can improve the way we learn.",
+  "category": null
+ },
+ {
+  "instruction": "Generate three words that start with the letter \u201cB\u201d",
+  "category": null
+ },
+ {
+  "instruction": "Describe a system by which robots can recognize and interact with humans.",
+  "category": null
+ },
+ {
+  "instruction": "Generate a play by play summary of the baseball game between the Chicago Cubs and the Los Angeles Dodgers",
+  "category": null
+ },
+ {
+  "instruction": "What is the best way to build trust in customer relationships?",
+  "category": null
+ },
+ {
+  "instruction": "Name 3 features of a smartphone.",
+  "category": null
+ },
+ {
+  "instruction": "What country currently holds the most nuclear warheads?",
+  "category": null
+ },
+ {
+  "instruction": "Which country has the highest GDP (per capita)?",
+  "category": null
+ },
+ {
+  "instruction": "Create a set of steps for how to make homemade ice cream.",
+  "category": null
+ },
+ {
+  "instruction": "State three facts about the history of the internet.",
+  "category": null
+ },
+ {
+  "instruction": "Generate a list of potential questions for an interviewee who is applying for a job as a data analyst.",
+  "category": null
+ },
+ {
+  "instruction": "Describe a blockchain in layman's terms.",
+  "category": null
+ },
+ {
+  "instruction": "Compare and contrast realism and idealism in philosophy.",
+  "category": null
+ },
+ {
+  "instruction": "Describe three characteristics of a mountain",
+  "category": null
+ },
+ {
+  "instruction": "Generate a hypothesis for why communication skills are critical for success in the workplace.",
+  "category": null
+ },
+ {
+  "instruction": "Identify the main goal of a recommender system",
+  "category": null
+ },
+ {
+  "instruction": "Provide an example of a limit of a function at a point.",
+  "category": null
+ },
+ {
+  "instruction": "Divide 871 by 8.",
+  "category": null
+ },
+ {
+  "instruction": "Identify the country in which Dutch is an official language.",
+  "category": null
+ },
+ {
+  "instruction": "Find the value of 8/2(2+2).",
+  "category": null
+ },
+ {
+  "instruction": "Reword this sentence in your own words.\n\nThey want to use the plan as soon as possible.",
+  "category": null
+ }
+]

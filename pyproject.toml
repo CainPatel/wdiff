@@ -1,0 +1,32 @@
+[project]
+name = "wdiff"
+version = "0.1.0"
+description = "Semantic diffs between two checkpoints of the same architecture"
+license = "Apache-2.0"
+requires-python = ">=3.11"
+# ponytail: phase 1 deps only; transformers/datasets/anthropic arrive with phases 2b-4.
+dependencies = [
+    "torch",
+    "safetensors",
+    "numpy",
+    "huggingface_hub",
+    "transformers>=5.22.1",
+]
+
+[project.scripts]
+wdiff = "wdiff.cli:main"
+
+[project.optional-dependencies]
+summarize = [
+    "anthropic>=2.6.0",
+]
+
+[dependency-groups]
+dev = ["pytest", "ruff"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 100

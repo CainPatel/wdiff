@@ -1,0 +1,7795 @@
+{
+  "meta": {
+    "tool": "wdiff",
+    "version": "0.1.0",
+    "stage": "structural",
+    "started": "2026-11-04T22:14:59.468263+00:00",
+    "finished": "2026-11-04T22:15:03.326379+00:00",
+    "base": {
+      "source": "Qwen/Qwen3.5-0.8B",
+      "revision": "2fc06364715b967f1860aea9cf38778875588b17"
+    },
+    "edited": {
+      "source": "RikiyaT/Qwen3.5-0.8B-weight-space-programming",
+      "revision": "d1671a178705bcab7644806d23c535517f35723b"
+    },
+    "args": {
+      "base": "Qwen/Qwen3.5-0.8B",
+      "edited": "RikiyaT/Qwen3.5-0.8B-weight-space-programming",
+      "out": "reports/qwen3.5-0.8b-wsp",
+      "top": 3
+    }
+  },
+  "summary": {
+    "total_params": 873438784,
+    "changed_params": 130188,
+    "changed_fraction": 0.00014905223169022914,
+    "touched_params": 131072,
+    "tensors": 488,
+    "tensors_changed": 2,
+    "per_layer": {
+      "0": {
+        "params": 39908000,
+        "changed": 0,
+        "touched": 0,
+        "tensors_changed": 0
+      },
+      "1": {
+        "params": 21555360,
+        "changed": 0,
+        "touched": 0,
+        "tensors_changed": 0
+      },
+      "2": {
+        "params": 21555360,
+        "changed": 0,
+        "touched": 0,
+        "tensors_changed": 0
+      },
+      "3": {
+        "params": 18352640,
+        "changed": 0,
+        "touched": 0,
+        "tensors_changed": 0
+      },
+      "4": {
+        "params": 21555360,
+        "changed": 0,
+        "touched": 0,
+        "tensors_changed": 0
+      },
+      "5": {
+        "params": 21555360,
+        "changed": 0,
+        "touched": 0,
+        "tensors_changed": 0
+      },
+      "6": {
+        "params": 21555360,
+        "changed": 0,
+        "touched": 0,
+        "tensors_changed": 0
+      },
+      "7": {
+        "params": 18352640,
+        "changed": 0,
+        "touched": 0,
+        "tensors_changed": 0
+      },
+      "8": {
+        "params": 21555360,
+        "changed": 0,
+        "touched": 0,
+        "tensors_changed": 0
+      },
+      "9": {
+        "params": 21555360,
+        "changed": 0,
+        "touched": 0,
+        "tensors_changed": 0
+      },
+      "10": {
+        "params": 21555360,
+        "changed": 0,
+        "touched": 0,
+        "tensors_changed": 0
+      },
+      "11": {
+        "params": 18352640,
+        "changed": 0,
+        "touched": 0,
+        "tensors_changed": 0
+      },
+      "12": {
+        "params": 21555360,
+        "changed": 0,
+        "touched": 0,
+        "tensors_changed": 0
+      },
+      "13": {
+        "params": 21555360,
+        "changed": 0,
+        "touched": 0,
+        "tensors_changed": 0
+      },
+      "14": {
+        "params": 21555360,
+        "changed": 0,
+        "touched": 0,
+        "tensors_changed": 0
+      },
+      "15": {
+        "params": 18352640,
+        "changed": 65260,
+        "touched": 65536,
+        "tensors_changed": 1
+      },
+      "16": {
+        "params": 21555360,
+        "changed": 0,
+        "touched": 0,
+        "tensors_changed": 0
+      },
+      "17": {
+        "params": 21555360,
+        "changed": 0,
+        "touched": 0,
+        "tensors_changed": 0
+      },
+      "18": {
+        "params": 21555360,
+        "changed": 0,
+        "touched": 0,
+        "tensors_changed": 0
+      },
+      "19": {
+        "params": 18352640,
+        "changed": 64928,
+        "touched": 65536,
+        "tensors_changed": 1
+      },
+      "20": {
+        "params": 21555360,
+        "changed": 0,
+        "touched": 0,
+        "tensors_changed": 0
+      },
+      "21": {
+        "params": 21555360,
+        "changed": 0,
+        "touched": 0,
+        "tensors_changed": 0
+      },
+      "22": {
+        "params": 21555360,
+        "changed": 0,
+        "touched": 0,
+        "tensors_changed": 0
+      },
+      "23": {
+        "params": 18352640,
+        "changed": 0,
+        "touched": 0,
+        "tensors_changed": 0
+      },
+      "other": {
+        "params": 356973824,
+        "changed": 0,
+        "touched": 0,
+        "tensors_changed": 0
+      }
+    }
+  },
+  "tensors": [
+    {
+      "name": "model.language_model.embed_tokens.weight",
+      "layer": null,
+      "shape": [
+        248320,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 254279680,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.0.input_layernorm.weight",
+      "layer": 0,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.0.linear_attn.A_log",
+      "layer": 0,
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.0.linear_attn.conv1d.weight",
+      "layer": 0,
+      "shape": [
+        6144,
+        1,
+        4
+      ],
+      "dtype": "bfloat16",
+      "params": 24576,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.0.linear_attn.dt_bias",
+      "layer": 0,
+      "shape": [
+        16
+      ],
+      "dtype": "bfloat16",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.0.linear_attn.in_proj_a.weight",
+      "layer": 0,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.0.linear_attn.in_proj_b.weight",
+      "layer": 0,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.0.linear_attn.in_proj_qkv.weight",
+      "layer": 0,
+      "shape": [
+        6144,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 6291456,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.0.linear_attn.in_proj_z.weight",
+      "layer": 0,
+      "shape": [
+        2048,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.0.linear_attn.norm.weight",
+      "layer": 0,
+      "shape": [
+        128
+      ],
+      "dtype": "float32",
+      "params": 128,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.0.linear_attn.out_proj.weight",
+      "layer": 0,
+      "shape": [
+        1024,
+        2048
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.0.mlp.down_proj.weight",
+      "layer": 0,
+      "shape": [
+        1024,
+        3584
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.0.mlp.gate_proj.weight",
+      "layer": 0,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.0.mlp.up_proj.weight",
+      "layer": 0,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.0.post_attention_layernorm.weight",
+      "layer": 0,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.1.input_layernorm.weight",
+      "layer": 1,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.1.linear_attn.A_log",
+      "layer": 1,
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.1.linear_attn.conv1d.weight",
+      "layer": 1,
+      "shape": [
+        6144,
+        1,
+        4
+      ],
+      "dtype": "bfloat16",
+      "params": 24576,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.1.linear_attn.dt_bias",
+      "layer": 1,
+      "shape": [
+        16
+      ],
+      "dtype": "bfloat16",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.1.linear_attn.in_proj_a.weight",
+      "layer": 1,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.1.linear_attn.in_proj_b.weight",
+      "layer": 1,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.1.linear_attn.in_proj_qkv.weight",
+      "layer": 1,
+      "shape": [
+        6144,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 6291456,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.1.linear_attn.in_proj_z.weight",
+      "layer": 1,
+      "shape": [
+        2048,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.1.linear_attn.norm.weight",
+      "layer": 1,
+      "shape": [
+        128
+      ],
+      "dtype": "float32",
+      "params": 128,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.1.linear_attn.out_proj.weight",
+      "layer": 1,
+      "shape": [
+        1024,
+        2048
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.1.mlp.down_proj.weight",
+      "layer": 1,
+      "shape": [
+        1024,
+        3584
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.1.mlp.gate_proj.weight",
+      "layer": 1,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.1.mlp.up_proj.weight",
+      "layer": 1,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.1.post_attention_layernorm.weight",
+      "layer": 1,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.10.input_layernorm.weight",
+      "layer": 10,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.10.linear_attn.A_log",
+      "layer": 10,
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.10.linear_attn.conv1d.weight",
+      "layer": 10,
+      "shape": [
+        6144,
+        1,
+        4
+      ],
+      "dtype": "bfloat16",
+      "params": 24576,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.10.linear_attn.dt_bias",
+      "layer": 10,
+      "shape": [
+        16
+      ],
+      "dtype": "bfloat16",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.10.linear_attn.in_proj_a.weight",
+      "layer": 10,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.10.linear_attn.in_proj_b.weight",
+      "layer": 10,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.10.linear_attn.in_proj_qkv.weight",
+      "layer": 10,
+      "shape": [
+        6144,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 6291456,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.10.linear_attn.in_proj_z.weight",
+      "layer": 10,
+      "shape": [
+        2048,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.10.linear_attn.norm.weight",
+      "layer": 10,
+      "shape": [
+        128
+      ],
+      "dtype": "float32",
+      "params": 128,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.10.linear_attn.out_proj.weight",
+      "layer": 10,
+      "shape": [
+        1024,
+        2048
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.10.mlp.down_proj.weight",
+      "layer": 10,
+      "shape": [
+        1024,
+        3584
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.10.mlp.gate_proj.weight",
+      "layer": 10,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.10.mlp.up_proj.weight",
+      "layer": 10,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.10.post_attention_layernorm.weight",
+      "layer": 10,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.11.input_layernorm.weight",
+      "layer": 11,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.11.mlp.down_proj.weight",
+      "layer": 11,
+      "shape": [
+        1024,
+        3584
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.11.mlp.gate_proj.weight",
+      "layer": 11,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.11.mlp.up_proj.weight",
+      "layer": 11,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.11.post_attention_layernorm.weight",
+      "layer": 11,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.11.self_attn.k_norm.weight",
+      "layer": 11,
+      "shape": [
+        256
+      ],
+      "dtype": "bfloat16",
+      "params": 256,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.11.self_attn.k_proj.weight",
+      "layer": 11,
+      "shape": [
+        512,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 524288,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.11.self_attn.o_proj.weight",
+      "layer": 11,
+      "shape": [
+        1024,
+        2048
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.11.self_attn.q_norm.weight",
+      "layer": 11,
+      "shape": [
+        256
+      ],
+      "dtype": "bfloat16",
+      "params": 256,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.11.self_attn.q_proj.weight",
+      "layer": 11,
+      "shape": [
+        4096,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 4194304,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.11.self_attn.v_proj.weight",
+      "layer": 11,
+      "shape": [
+        512,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 524288,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.12.input_layernorm.weight",
+      "layer": 12,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.12.linear_attn.A_log",
+      "layer": 12,
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.12.linear_attn.conv1d.weight",
+      "layer": 12,
+      "shape": [
+        6144,
+        1,
+        4
+      ],
+      "dtype": "bfloat16",
+      "params": 24576,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.12.linear_attn.dt_bias",
+      "layer": 12,
+      "shape": [
+        16
+      ],
+      "dtype": "bfloat16",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.12.linear_attn.in_proj_a.weight",
+      "layer": 12,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.12.linear_attn.in_proj_b.weight",
+      "layer": 12,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.12.linear_attn.in_proj_qkv.weight",
+      "layer": 12,
+      "shape": [
+        6144,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 6291456,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.12.linear_attn.in_proj_z.weight",
+      "layer": 12,
+      "shape": [
+        2048,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.12.linear_attn.norm.weight",
+      "layer": 12,
+      "shape": [
+        128
+      ],
+      "dtype": "float32",
+      "params": 128,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.12.linear_attn.out_proj.weight",
+      "layer": 12,
+      "shape": [
+        1024,
+        2048
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.12.mlp.down_proj.weight",
+      "layer": 12,
+      "shape": [
+        1024,
+        3584
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.12.mlp.gate_proj.weight",
+      "layer": 12,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.12.mlp.up_proj.weight",
+      "layer": 12,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.12.post_attention_layernorm.weight",
+      "layer": 12,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.13.input_layernorm.weight",
+      "layer": 13,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.13.linear_attn.A_log",
+      "layer": 13,
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.13.linear_attn.conv1d.weight",
+      "layer": 13,
+      "shape": [
+        6144,
+        1,
+        4
+      ],
+      "dtype": "bfloat16",
+      "params": 24576,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.13.linear_attn.dt_bias",
+      "layer": 13,
+      "shape": [
+        16
+      ],
+      "dtype": "bfloat16",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.13.linear_attn.in_proj_a.weight",
+      "layer": 13,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.13.linear_attn.in_proj_b.weight",
+      "layer": 13,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.13.linear_attn.in_proj_qkv.weight",
+      "layer": 13,
+      "shape": [
+        6144,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 6291456,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.13.linear_attn.in_proj_z.weight",
+      "layer": 13,
+      "shape": [
+        2048,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.13.linear_attn.norm.weight",
+      "layer": 13,
+      "shape": [
+        128
+      ],
+      "dtype": "float32",
+      "params": 128,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.13.linear_attn.out_proj.weight",
+      "layer": 13,
+      "shape": [
+        1024,
+        2048
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.13.mlp.down_proj.weight",
+      "layer": 13,
+      "shape": [
+        1024,
+        3584
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.13.mlp.gate_proj.weight",
+      "layer": 13,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.13.mlp.up_proj.weight",
+      "layer": 13,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.13.post_attention_layernorm.weight",
+      "layer": 13,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.14.input_layernorm.weight",
+      "layer": 14,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.14.linear_attn.A_log",
+      "layer": 14,
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.14.linear_attn.conv1d.weight",
+      "layer": 14,
+      "shape": [
+        6144,
+        1,
+        4
+      ],
+      "dtype": "bfloat16",
+      "params": 24576,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.14.linear_attn.dt_bias",
+      "layer": 14,
+      "shape": [
+        16
+      ],
+      "dtype": "bfloat16",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.14.linear_attn.in_proj_a.weight",
+      "layer": 14,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.14.linear_attn.in_proj_b.weight",
+      "layer": 14,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.14.linear_attn.in_proj_qkv.weight",
+      "layer": 14,
+      "shape": [
+        6144,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 6291456,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.14.linear_attn.in_proj_z.weight",
+      "layer": 14,
+      "shape": [
+        2048,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.14.linear_attn.norm.weight",
+      "layer": 14,
+      "shape": [
+        128
+      ],
+      "dtype": "float32",
+      "params": 128,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.14.linear_attn.out_proj.weight",
+      "layer": 14,
+      "shape": [
+        1024,
+        2048
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.14.mlp.down_proj.weight",
+      "layer": 14,
+      "shape": [
+        1024,
+        3584
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.14.mlp.gate_proj.weight",
+      "layer": 14,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.14.mlp.up_proj.weight",
+      "layer": 14,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.14.post_attention_layernorm.weight",
+      "layer": 14,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.15.input_layernorm.weight",
+      "layer": 15,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.15.mlp.down_proj.weight",
+      "layer": 15,
+      "shape": [
+        1024,
+        3584
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 65260,
+      "touched": 65536,
+      "frobenius_ratio": 0.10636181051508302,
+      "cosine": 0.9943718485418563,
+      "max_abs_delta": 0.1463623046875,
+      "changed_rows": 1024,
+      "changed_cols": 64
+    },
+    {
+      "name": "model.language_model.layers.15.mlp.gate_proj.weight",
+      "layer": 15,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.15.mlp.up_proj.weight",
+      "layer": 15,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.15.post_attention_layernorm.weight",
+      "layer": 15,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.15.self_attn.k_norm.weight",
+      "layer": 15,
+      "shape": [
+        256
+      ],
+      "dtype": "bfloat16",
+      "params": 256,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.15.self_attn.k_proj.weight",
+      "layer": 15,
+      "shape": [
+        512,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 524288,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.15.self_attn.o_proj.weight",
+      "layer": 15,
+      "shape": [
+        1024,
+        2048
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.15.self_attn.q_norm.weight",
+      "layer": 15,
+      "shape": [
+        256
+      ],
+      "dtype": "bfloat16",
+      "params": 256,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.15.self_attn.q_proj.weight",
+      "layer": 15,
+      "shape": [
+        4096,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 4194304,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.15.self_attn.v_proj.weight",
+      "layer": 15,
+      "shape": [
+        512,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 524288,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.16.input_layernorm.weight",
+      "layer": 16,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.16.linear_attn.A_log",
+      "layer": 16,
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.16.linear_attn.conv1d.weight",
+      "layer": 16,
+      "shape": [
+        6144,
+        1,
+        4
+      ],
+      "dtype": "bfloat16",
+      "params": 24576,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.16.linear_attn.dt_bias",
+      "layer": 16,
+      "shape": [
+        16
+      ],
+      "dtype": "bfloat16",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.16.linear_attn.in_proj_a.weight",
+      "layer": 16,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.16.linear_attn.in_proj_b.weight",
+      "layer": 16,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.16.linear_attn.in_proj_qkv.weight",
+      "layer": 16,
+      "shape": [
+        6144,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 6291456,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.16.linear_attn.in_proj_z.weight",
+      "layer": 16,
+      "shape": [
+        2048,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.16.linear_attn.norm.weight",
+      "layer": 16,
+      "shape": [
+        128
+      ],
+      "dtype": "float32",
+      "params": 128,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.16.linear_attn.out_proj.weight",
+      "layer": 16,
+      "shape": [
+        1024,
+        2048
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.16.mlp.down_proj.weight",
+      "layer": 16,
+      "shape": [
+        1024,
+        3584
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.16.mlp.gate_proj.weight",
+      "layer": 16,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.16.mlp.up_proj.weight",
+      "layer": 16,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.16.post_attention_layernorm.weight",
+      "layer": 16,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.17.input_layernorm.weight",
+      "layer": 17,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.17.linear_attn.A_log",
+      "layer": 17,
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.17.linear_attn.conv1d.weight",
+      "layer": 17,
+      "shape": [
+        6144,
+        1,
+        4
+      ],
+      "dtype": "bfloat16",
+      "params": 24576,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.17.linear_attn.dt_bias",
+      "layer": 17,
+      "shape": [
+        16
+      ],
+      "dtype": "bfloat16",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.17.linear_attn.in_proj_a.weight",
+      "layer": 17,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.17.linear_attn.in_proj_b.weight",
+      "layer": 17,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.17.linear_attn.in_proj_qkv.weight",
+      "layer": 17,
+      "shape": [
+        6144,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 6291456,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.17.linear_attn.in_proj_z.weight",
+      "layer": 17,
+      "shape": [
+        2048,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.17.linear_attn.norm.weight",
+      "layer": 17,
+      "shape": [
+        128
+      ],
+      "dtype": "float32",
+      "params": 128,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.17.linear_attn.out_proj.weight",
+      "layer": 17,
+      "shape": [
+        1024,
+        2048
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.17.mlp.down_proj.weight",
+      "layer": 17,
+      "shape": [
+        1024,
+        3584
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.17.mlp.gate_proj.weight",
+      "layer": 17,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.17.mlp.up_proj.weight",
+      "layer": 17,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.17.post_attention_layernorm.weight",
+      "layer": 17,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.18.input_layernorm.weight",
+      "layer": 18,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.18.linear_attn.A_log",
+      "layer": 18,
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.18.linear_attn.conv1d.weight",
+      "layer": 18,
+      "shape": [
+        6144,
+        1,
+        4
+      ],
+      "dtype": "bfloat16",
+      "params": 24576,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.18.linear_attn.dt_bias",
+      "layer": 18,
+      "shape": [
+        16
+      ],
+      "dtype": "bfloat16",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.18.linear_attn.in_proj_a.weight",
+      "layer": 18,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.18.linear_attn.in_proj_b.weight",
+      "layer": 18,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.18.linear_attn.in_proj_qkv.weight",
+      "layer": 18,
+      "shape": [
+        6144,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 6291456,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.18.linear_attn.in_proj_z.weight",
+      "layer": 18,
+      "shape": [
+        2048,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.18.linear_attn.norm.weight",
+      "layer": 18,
+      "shape": [
+        128
+      ],
+      "dtype": "float32",
+      "params": 128,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.18.linear_attn.out_proj.weight",
+      "layer": 18,
+      "shape": [
+        1024,
+        2048
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.18.mlp.down_proj.weight",
+      "layer": 18,
+      "shape": [
+        1024,
+        3584
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.18.mlp.gate_proj.weight",
+      "layer": 18,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.18.mlp.up_proj.weight",
+      "layer": 18,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.18.post_attention_layernorm.weight",
+      "layer": 18,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.19.input_layernorm.weight",
+      "layer": 19,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.19.mlp.down_proj.weight",
+      "layer": 19,
+      "shape": [
+        1024,
+        3584
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 64928,
+      "touched": 65536,
+      "frobenius_ratio": 0.08106276525634826,
+      "cosine": 0.9967239761195072,
+      "max_abs_delta": 0.21484375,
+      "changed_rows": 1023,
+      "changed_cols": 64
+    },
+    {
+      "name": "model.language_model.layers.19.mlp.gate_proj.weight",
+      "layer": 19,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.19.mlp.up_proj.weight",
+      "layer": 19,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.19.post_attention_layernorm.weight",
+      "layer": 19,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.19.self_attn.k_norm.weight",
+      "layer": 19,
+      "shape": [
+        256
+      ],
+      "dtype": "bfloat16",
+      "params": 256,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.19.self_attn.k_proj.weight",
+      "layer": 19,
+      "shape": [
+        512,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 524288,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.19.self_attn.o_proj.weight",
+      "layer": 19,
+      "shape": [
+        1024,
+        2048
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.19.self_attn.q_norm.weight",
+      "layer": 19,
+      "shape": [
+        256
+      ],
+      "dtype": "bfloat16",
+      "params": 256,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.19.self_attn.q_proj.weight",
+      "layer": 19,
+      "shape": [
+        4096,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 4194304,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.19.self_attn.v_proj.weight",
+      "layer": 19,
+      "shape": [
+        512,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 524288,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.2.input_layernorm.weight",
+      "layer": 2,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.2.linear_attn.A_log",
+      "layer": 2,
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.2.linear_attn.conv1d.weight",
+      "layer": 2,
+      "shape": [
+        6144,
+        1,
+        4
+      ],
+      "dtype": "bfloat16",
+      "params": 24576,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.2.linear_attn.dt_bias",
+      "layer": 2,
+      "shape": [
+        16
+      ],
+      "dtype": "bfloat16",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.2.linear_attn.in_proj_a.weight",
+      "layer": 2,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.2.linear_attn.in_proj_b.weight",
+      "layer": 2,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.2.linear_attn.in_proj_qkv.weight",
+      "layer": 2,
+      "shape": [
+        6144,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 6291456,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.2.linear_attn.in_proj_z.weight",
+      "layer": 2,
+      "shape": [
+        2048,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.2.linear_attn.norm.weight",
+      "layer": 2,
+      "shape": [
+        128
+      ],
+      "dtype": "float32",
+      "params": 128,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.2.linear_attn.out_proj.weight",
+      "layer": 2,
+      "shape": [
+        1024,
+        2048
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.2.mlp.down_proj.weight",
+      "layer": 2,
+      "shape": [
+        1024,
+        3584
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.2.mlp.gate_proj.weight",
+      "layer": 2,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.2.mlp.up_proj.weight",
+      "layer": 2,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.2.post_attention_layernorm.weight",
+      "layer": 2,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.20.input_layernorm.weight",
+      "layer": 20,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.20.linear_attn.A_log",
+      "layer": 20,
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.20.linear_attn.conv1d.weight",
+      "layer": 20,
+      "shape": [
+        6144,
+        1,
+        4
+      ],
+      "dtype": "bfloat16",
+      "params": 24576,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.20.linear_attn.dt_bias",
+      "layer": 20,
+      "shape": [
+        16
+      ],
+      "dtype": "bfloat16",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.20.linear_attn.in_proj_a.weight",
+      "layer": 20,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.20.linear_attn.in_proj_b.weight",
+      "layer": 20,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.20.linear_attn.in_proj_qkv.weight",
+      "layer": 20,
+      "shape": [
+        6144,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 6291456,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.20.linear_attn.in_proj_z.weight",
+      "layer": 20,
+      "shape": [
+        2048,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.20.linear_attn.norm.weight",
+      "layer": 20,
+      "shape": [
+        128
+      ],
+      "dtype": "float32",
+      "params": 128,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.20.linear_attn.out_proj.weight",
+      "layer": 20,
+      "shape": [
+        1024,
+        2048
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.20.mlp.down_proj.weight",
+      "layer": 20,
+      "shape": [
+        1024,
+        3584
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.20.mlp.gate_proj.weight",
+      "layer": 20,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.20.mlp.up_proj.weight",
+      "layer": 20,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.20.post_attention_layernorm.weight",
+      "layer": 20,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.21.input_layernorm.weight",
+      "layer": 21,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.21.linear_attn.A_log",
+      "layer": 21,
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.21.linear_attn.conv1d.weight",
+      "layer": 21,
+      "shape": [
+        6144,
+        1,
+        4
+      ],
+      "dtype": "bfloat16",
+      "params": 24576,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.21.linear_attn.dt_bias",
+      "layer": 21,
+      "shape": [
+        16
+      ],
+      "dtype": "bfloat16",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.21.linear_attn.in_proj_a.weight",
+      "layer": 21,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.21.linear_attn.in_proj_b.weight",
+      "layer": 21,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.21.linear_attn.in_proj_qkv.weight",
+      "layer": 21,
+      "shape": [
+        6144,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 6291456,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.21.linear_attn.in_proj_z.weight",
+      "layer": 21,
+      "shape": [
+        2048,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.21.linear_attn.norm.weight",
+      "layer": 21,
+      "shape": [
+        128
+      ],
+      "dtype": "float32",
+      "params": 128,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.21.linear_attn.out_proj.weight",
+      "layer": 21,
+      "shape": [
+        1024,
+        2048
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.21.mlp.down_proj.weight",
+      "layer": 21,
+      "shape": [
+        1024,
+        3584
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.21.mlp.gate_proj.weight",
+      "layer": 21,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.21.mlp.up_proj.weight",
+      "layer": 21,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.21.post_attention_layernorm.weight",
+      "layer": 21,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.22.input_layernorm.weight",
+      "layer": 22,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.22.linear_attn.A_log",
+      "layer": 22,
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.22.linear_attn.conv1d.weight",
+      "layer": 22,
+      "shape": [
+        6144,
+        1,
+        4
+      ],
+      "dtype": "bfloat16",
+      "params": 24576,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.22.linear_attn.dt_bias",
+      "layer": 22,
+      "shape": [
+        16
+      ],
+      "dtype": "bfloat16",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.22.linear_attn.in_proj_a.weight",
+      "layer": 22,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.22.linear_attn.in_proj_b.weight",
+      "layer": 22,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.22.linear_attn.in_proj_qkv.weight",
+      "layer": 22,
+      "shape": [
+        6144,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 6291456,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.22.linear_attn.in_proj_z.weight",
+      "layer": 22,
+      "shape": [
+        2048,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.22.linear_attn.norm.weight",
+      "layer": 22,
+      "shape": [
+        128
+      ],
+      "dtype": "float32",
+      "params": 128,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.22.linear_attn.out_proj.weight",
+      "layer": 22,
+      "shape": [
+        1024,
+        2048
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.22.mlp.down_proj.weight",
+      "layer": 22,
+      "shape": [
+        1024,
+        3584
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.22.mlp.gate_proj.weight",
+      "layer": 22,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.22.mlp.up_proj.weight",
+      "layer": 22,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.22.post_attention_layernorm.weight",
+      "layer": 22,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.23.input_layernorm.weight",
+      "layer": 23,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.23.mlp.down_proj.weight",
+      "layer": 23,
+      "shape": [
+        1024,
+        3584
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.23.mlp.gate_proj.weight",
+      "layer": 23,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.23.mlp.up_proj.weight",
+      "layer": 23,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.23.post_attention_layernorm.weight",
+      "layer": 23,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.23.self_attn.k_norm.weight",
+      "layer": 23,
+      "shape": [
+        256
+      ],
+      "dtype": "bfloat16",
+      "params": 256,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.23.self_attn.k_proj.weight",
+      "layer": 23,
+      "shape": [
+        512,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 524288,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.23.self_attn.o_proj.weight",
+      "layer": 23,
+      "shape": [
+        1024,
+        2048
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.23.self_attn.q_norm.weight",
+      "layer": 23,
+      "shape": [
+        256
+      ],
+      "dtype": "bfloat16",
+      "params": 256,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.23.self_attn.q_proj.weight",
+      "layer": 23,
+      "shape": [
+        4096,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 4194304,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.23.self_attn.v_proj.weight",
+      "layer": 23,
+      "shape": [
+        512,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 524288,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.3.input_layernorm.weight",
+      "layer": 3,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.3.mlp.down_proj.weight",
+      "layer": 3,
+      "shape": [
+        1024,
+        3584
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.3.mlp.gate_proj.weight",
+      "layer": 3,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.3.mlp.up_proj.weight",
+      "layer": 3,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.3.post_attention_layernorm.weight",
+      "layer": 3,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.3.self_attn.k_norm.weight",
+      "layer": 3,
+      "shape": [
+        256
+      ],
+      "dtype": "bfloat16",
+      "params": 256,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.3.self_attn.k_proj.weight",
+      "layer": 3,
+      "shape": [
+        512,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 524288,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.3.self_attn.o_proj.weight",
+      "layer": 3,
+      "shape": [
+        1024,
+        2048
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.3.self_attn.q_norm.weight",
+      "layer": 3,
+      "shape": [
+        256
+      ],
+      "dtype": "bfloat16",
+      "params": 256,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.3.self_attn.q_proj.weight",
+      "layer": 3,
+      "shape": [
+        4096,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 4194304,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.3.self_attn.v_proj.weight",
+      "layer": 3,
+      "shape": [
+        512,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 524288,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.4.input_layernorm.weight",
+      "layer": 4,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.4.linear_attn.A_log",
+      "layer": 4,
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.4.linear_attn.conv1d.weight",
+      "layer": 4,
+      "shape": [
+        6144,
+        1,
+        4
+      ],
+      "dtype": "bfloat16",
+      "params": 24576,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.4.linear_attn.dt_bias",
+      "layer": 4,
+      "shape": [
+        16
+      ],
+      "dtype": "bfloat16",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.4.linear_attn.in_proj_a.weight",
+      "layer": 4,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.4.linear_attn.in_proj_b.weight",
+      "layer": 4,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.4.linear_attn.in_proj_qkv.weight",
+      "layer": 4,
+      "shape": [
+        6144,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 6291456,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.4.linear_attn.in_proj_z.weight",
+      "layer": 4,
+      "shape": [
+        2048,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.4.linear_attn.norm.weight",
+      "layer": 4,
+      "shape": [
+        128
+      ],
+      "dtype": "float32",
+      "params": 128,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.4.linear_attn.out_proj.weight",
+      "layer": 4,
+      "shape": [
+        1024,
+        2048
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.4.mlp.down_proj.weight",
+      "layer": 4,
+      "shape": [
+        1024,
+        3584
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.4.mlp.gate_proj.weight",
+      "layer": 4,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.4.mlp.up_proj.weight",
+      "layer": 4,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.4.post_attention_layernorm.weight",
+      "layer": 4,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.5.input_layernorm.weight",
+      "layer": 5,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.5.linear_attn.A_log",
+      "layer": 5,
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.5.linear_attn.conv1d.weight",
+      "layer": 5,
+      "shape": [
+        6144,
+        1,
+        4
+      ],
+      "dtype": "bfloat16",
+      "params": 24576,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.5.linear_attn.dt_bias",
+      "layer": 5,
+      "shape": [
+        16
+      ],
+      "dtype": "bfloat16",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.5.linear_attn.in_proj_a.weight",
+      "layer": 5,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.5.linear_attn.in_proj_b.weight",
+      "layer": 5,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.5.linear_attn.in_proj_qkv.weight",
+      "layer": 5,
+      "shape": [
+        6144,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 6291456,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.5.linear_attn.in_proj_z.weight",
+      "layer": 5,
+      "shape": [
+        2048,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.5.linear_attn.norm.weight",
+      "layer": 5,
+      "shape": [
+        128
+      ],
+      "dtype": "float32",
+      "params": 128,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.5.linear_attn.out_proj.weight",
+      "layer": 5,
+      "shape": [
+        1024,
+        2048
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.5.mlp.down_proj.weight",
+      "layer": 5,
+      "shape": [
+        1024,
+        3584
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.5.mlp.gate_proj.weight",
+      "layer": 5,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.5.mlp.up_proj.weight",
+      "layer": 5,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.5.post_attention_layernorm.weight",
+      "layer": 5,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.6.input_layernorm.weight",
+      "layer": 6,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.6.linear_attn.A_log",
+      "layer": 6,
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.6.linear_attn.conv1d.weight",
+      "layer": 6,
+      "shape": [
+        6144,
+        1,
+        4
+      ],
+      "dtype": "bfloat16",
+      "params": 24576,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.6.linear_attn.dt_bias",
+      "layer": 6,
+      "shape": [
+        16
+      ],
+      "dtype": "bfloat16",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.6.linear_attn.in_proj_a.weight",
+      "layer": 6,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.6.linear_attn.in_proj_b.weight",
+      "layer": 6,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.6.linear_attn.in_proj_qkv.weight",
+      "layer": 6,
+      "shape": [
+        6144,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 6291456,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.6.linear_attn.in_proj_z.weight",
+      "layer": 6,
+      "shape": [
+        2048,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.6.linear_attn.norm.weight",
+      "layer": 6,
+      "shape": [
+        128
+      ],
+      "dtype": "float32",
+      "params": 128,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.6.linear_attn.out_proj.weight",
+      "layer": 6,
+      "shape": [
+        1024,
+        2048
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.6.mlp.down_proj.weight",
+      "layer": 6,
+      "shape": [
+        1024,
+        3584
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.6.mlp.gate_proj.weight",
+      "layer": 6,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.6.mlp.up_proj.weight",
+      "layer": 6,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.6.post_attention_layernorm.weight",
+      "layer": 6,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.7.input_layernorm.weight",
+      "layer": 7,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.7.mlp.down_proj.weight",
+      "layer": 7,
+      "shape": [
+        1024,
+        3584
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.7.mlp.gate_proj.weight",
+      "layer": 7,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.7.mlp.up_proj.weight",
+      "layer": 7,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.7.post_attention_layernorm.weight",
+      "layer": 7,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.7.self_attn.k_norm.weight",
+      "layer": 7,
+      "shape": [
+        256
+      ],
+      "dtype": "bfloat16",
+      "params": 256,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.7.self_attn.k_proj.weight",
+      "layer": 7,
+      "shape": [
+        512,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 524288,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.7.self_attn.o_proj.weight",
+      "layer": 7,
+      "shape": [
+        1024,
+        2048
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.7.self_attn.q_norm.weight",
+      "layer": 7,
+      "shape": [
+        256
+      ],
+      "dtype": "bfloat16",
+      "params": 256,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.7.self_attn.q_proj.weight",
+      "layer": 7,
+      "shape": [
+        4096,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 4194304,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.7.self_attn.v_proj.weight",
+      "layer": 7,
+      "shape": [
+        512,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 524288,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.8.input_layernorm.weight",
+      "layer": 8,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.8.linear_attn.A_log",
+      "layer": 8,
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.8.linear_attn.conv1d.weight",
+      "layer": 8,
+      "shape": [
+        6144,
+        1,
+        4
+      ],
+      "dtype": "bfloat16",
+      "params": 24576,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.8.linear_attn.dt_bias",
+      "layer": 8,
+      "shape": [
+        16
+      ],
+      "dtype": "bfloat16",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.8.linear_attn.in_proj_a.weight",
+      "layer": 8,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.8.linear_attn.in_proj_b.weight",
+      "layer": 8,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.8.linear_attn.in_proj_qkv.weight",
+      "layer": 8,
+      "shape": [
+        6144,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 6291456,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.8.linear_attn.in_proj_z.weight",
+      "layer": 8,
+      "shape": [
+        2048,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.8.linear_attn.norm.weight",
+      "layer": 8,
+      "shape": [
+        128
+      ],
+      "dtype": "float32",
+      "params": 128,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.8.linear_attn.out_proj.weight",
+      "layer": 8,
+      "shape": [
+        1024,
+        2048
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.8.mlp.down_proj.weight",
+      "layer": 8,
+      "shape": [
+        1024,
+        3584
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.8.mlp.gate_proj.weight",
+      "layer": 8,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.8.mlp.up_proj.weight",
+      "layer": 8,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.8.post_attention_layernorm.weight",
+      "layer": 8,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.9.input_layernorm.weight",
+      "layer": 9,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.9.linear_attn.A_log",
+      "layer": 9,
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.9.linear_attn.conv1d.weight",
+      "layer": 9,
+      "shape": [
+        6144,
+        1,
+        4
+      ],
+      "dtype": "bfloat16",
+      "params": 24576,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.9.linear_attn.dt_bias",
+      "layer": 9,
+      "shape": [
+        16
+      ],
+      "dtype": "bfloat16",
+      "params": 16,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.9.linear_attn.in_proj_a.weight",
+      "layer": 9,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.9.linear_attn.in_proj_b.weight",
+      "layer": 9,
+      "shape": [
+        16,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 16384,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.9.linear_attn.in_proj_qkv.weight",
+      "layer": 9,
+      "shape": [
+        6144,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 6291456,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.9.linear_attn.in_proj_z.weight",
+      "layer": 9,
+      "shape": [
+        2048,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.9.linear_attn.norm.weight",
+      "layer": 9,
+      "shape": [
+        128
+      ],
+      "dtype": "float32",
+      "params": 128,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.layers.9.linear_attn.out_proj.weight",
+      "layer": 9,
+      "shape": [
+        1024,
+        2048
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.9.mlp.down_proj.weight",
+      "layer": 9,
+      "shape": [
+        1024,
+        3584
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.9.mlp.gate_proj.weight",
+      "layer": 9,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.9.mlp.up_proj.weight",
+      "layer": 9,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.language_model.layers.9.post_attention_layernorm.weight",
+      "layer": 9,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.language_model.norm.weight",
+      "layer": null,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.0.attn.proj.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.0.attn.proj.weight",
+      "layer": null,
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 589824,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.0.attn.qkv.bias",
+      "layer": null,
+      "shape": [
+        2304
+      ],
+      "dtype": "bfloat16",
+      "params": 2304,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.0.attn.qkv.weight",
+      "layer": null,
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 1769472,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.0.mlp.linear_fc1.bias",
+      "layer": null,
+      "shape": [
+        3072
+      ],
+      "dtype": "bfloat16",
+      "params": 3072,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.0.mlp.linear_fc1.weight",
+      "layer": null,
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 2359296,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.0.mlp.linear_fc2.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.0.mlp.linear_fc2.weight",
+      "layer": null,
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": "bfloat16",
+      "params": 2359296,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.0.norm1.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.0.norm1.weight",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.0.norm2.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.0.norm2.weight",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.1.attn.proj.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.1.attn.proj.weight",
+      "layer": null,
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 589824,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.1.attn.qkv.bias",
+      "layer": null,
+      "shape": [
+        2304
+      ],
+      "dtype": "bfloat16",
+      "params": 2304,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.1.attn.qkv.weight",
+      "layer": null,
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 1769472,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.1.mlp.linear_fc1.bias",
+      "layer": null,
+      "shape": [
+        3072
+      ],
+      "dtype": "bfloat16",
+      "params": 3072,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.1.mlp.linear_fc1.weight",
+      "layer": null,
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 2359296,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.1.mlp.linear_fc2.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.1.mlp.linear_fc2.weight",
+      "layer": null,
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": "bfloat16",
+      "params": 2359296,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.1.norm1.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.1.norm1.weight",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.1.norm2.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.1.norm2.weight",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.10.attn.proj.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.10.attn.proj.weight",
+      "layer": null,
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 589824,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.10.attn.qkv.bias",
+      "layer": null,
+      "shape": [
+        2304
+      ],
+      "dtype": "bfloat16",
+      "params": 2304,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.10.attn.qkv.weight",
+      "layer": null,
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 1769472,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.10.mlp.linear_fc1.bias",
+      "layer": null,
+      "shape": [
+        3072
+      ],
+      "dtype": "bfloat16",
+      "params": 3072,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.10.mlp.linear_fc1.weight",
+      "layer": null,
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 2359296,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.10.mlp.linear_fc2.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.10.mlp.linear_fc2.weight",
+      "layer": null,
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": "bfloat16",
+      "params": 2359296,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.10.norm1.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.10.norm1.weight",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.10.norm2.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.10.norm2.weight",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.11.attn.proj.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.11.attn.proj.weight",
+      "layer": null,
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 589824,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.11.attn.qkv.bias",
+      "layer": null,
+      "shape": [
+        2304
+      ],
+      "dtype": "bfloat16",
+      "params": 2304,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.11.attn.qkv.weight",
+      "layer": null,
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 1769472,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.11.mlp.linear_fc1.bias",
+      "layer": null,
+      "shape": [
+        3072
+      ],
+      "dtype": "bfloat16",
+      "params": 3072,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.11.mlp.linear_fc1.weight",
+      "layer": null,
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 2359296,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.11.mlp.linear_fc2.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.11.mlp.linear_fc2.weight",
+      "layer": null,
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": "bfloat16",
+      "params": 2359296,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.11.norm1.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.11.norm1.weight",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.11.norm2.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.11.norm2.weight",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.2.attn.proj.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.2.attn.proj.weight",
+      "layer": null,
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 589824,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.2.attn.qkv.bias",
+      "layer": null,
+      "shape": [
+        2304
+      ],
+      "dtype": "bfloat16",
+      "params": 2304,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.2.attn.qkv.weight",
+      "layer": null,
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 1769472,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.2.mlp.linear_fc1.bias",
+      "layer": null,
+      "shape": [
+        3072
+      ],
+      "dtype": "bfloat16",
+      "params": 3072,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.2.mlp.linear_fc1.weight",
+      "layer": null,
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 2359296,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.2.mlp.linear_fc2.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.2.mlp.linear_fc2.weight",
+      "layer": null,
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": "bfloat16",
+      "params": 2359296,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.2.norm1.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.2.norm1.weight",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.2.norm2.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.2.norm2.weight",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.3.attn.proj.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.3.attn.proj.weight",
+      "layer": null,
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 589824,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.3.attn.qkv.bias",
+      "layer": null,
+      "shape": [
+        2304
+      ],
+      "dtype": "bfloat16",
+      "params": 2304,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.3.attn.qkv.weight",
+      "layer": null,
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 1769472,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.3.mlp.linear_fc1.bias",
+      "layer": null,
+      "shape": [
+        3072
+      ],
+      "dtype": "bfloat16",
+      "params": 3072,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.3.mlp.linear_fc1.weight",
+      "layer": null,
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 2359296,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.3.mlp.linear_fc2.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.3.mlp.linear_fc2.weight",
+      "layer": null,
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": "bfloat16",
+      "params": 2359296,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.3.norm1.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.3.norm1.weight",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.3.norm2.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.3.norm2.weight",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.4.attn.proj.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.4.attn.proj.weight",
+      "layer": null,
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 589824,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.4.attn.qkv.bias",
+      "layer": null,
+      "shape": [
+        2304
+      ],
+      "dtype": "bfloat16",
+      "params": 2304,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.4.attn.qkv.weight",
+      "layer": null,
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 1769472,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.4.mlp.linear_fc1.bias",
+      "layer": null,
+      "shape": [
+        3072
+      ],
+      "dtype": "bfloat16",
+      "params": 3072,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.4.mlp.linear_fc1.weight",
+      "layer": null,
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 2359296,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.4.mlp.linear_fc2.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.4.mlp.linear_fc2.weight",
+      "layer": null,
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": "bfloat16",
+      "params": 2359296,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.4.norm1.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.4.norm1.weight",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.4.norm2.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.4.norm2.weight",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.5.attn.proj.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.5.attn.proj.weight",
+      "layer": null,
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 589824,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.5.attn.qkv.bias",
+      "layer": null,
+      "shape": [
+        2304
+      ],
+      "dtype": "bfloat16",
+      "params": 2304,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.5.attn.qkv.weight",
+      "layer": null,
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 1769472,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.5.mlp.linear_fc1.bias",
+      "layer": null,
+      "shape": [
+        3072
+      ],
+      "dtype": "bfloat16",
+      "params": 3072,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.5.mlp.linear_fc1.weight",
+      "layer": null,
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 2359296,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.5.mlp.linear_fc2.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.5.mlp.linear_fc2.weight",
+      "layer": null,
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": "bfloat16",
+      "params": 2359296,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.5.norm1.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.5.norm1.weight",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.5.norm2.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.5.norm2.weight",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.6.attn.proj.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.6.attn.proj.weight",
+      "layer": null,
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 589824,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.6.attn.qkv.bias",
+      "layer": null,
+      "shape": [
+        2304
+      ],
+      "dtype": "bfloat16",
+      "params": 2304,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.6.attn.qkv.weight",
+      "layer": null,
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 1769472,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.6.mlp.linear_fc1.bias",
+      "layer": null,
+      "shape": [
+        3072
+      ],
+      "dtype": "bfloat16",
+      "params": 3072,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.6.mlp.linear_fc1.weight",
+      "layer": null,
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 2359296,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.6.mlp.linear_fc2.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.6.mlp.linear_fc2.weight",
+      "layer": null,
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": "bfloat16",
+      "params": 2359296,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.6.norm1.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.6.norm1.weight",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.6.norm2.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.6.norm2.weight",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.7.attn.proj.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.7.attn.proj.weight",
+      "layer": null,
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 589824,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.7.attn.qkv.bias",
+      "layer": null,
+      "shape": [
+        2304
+      ],
+      "dtype": "bfloat16",
+      "params": 2304,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.7.attn.qkv.weight",
+      "layer": null,
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 1769472,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.7.mlp.linear_fc1.bias",
+      "layer": null,
+      "shape": [
+        3072
+      ],
+      "dtype": "bfloat16",
+      "params": 3072,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.7.mlp.linear_fc1.weight",
+      "layer": null,
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 2359296,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.7.mlp.linear_fc2.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.7.mlp.linear_fc2.weight",
+      "layer": null,
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": "bfloat16",
+      "params": 2359296,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.7.norm1.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.7.norm1.weight",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.7.norm2.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.7.norm2.weight",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.8.attn.proj.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.8.attn.proj.weight",
+      "layer": null,
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 589824,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.8.attn.qkv.bias",
+      "layer": null,
+      "shape": [
+        2304
+      ],
+      "dtype": "bfloat16",
+      "params": 2304,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.8.attn.qkv.weight",
+      "layer": null,
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 1769472,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.8.mlp.linear_fc1.bias",
+      "layer": null,
+      "shape": [
+        3072
+      ],
+      "dtype": "bfloat16",
+      "params": 3072,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.8.mlp.linear_fc1.weight",
+      "layer": null,
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 2359296,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.8.mlp.linear_fc2.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.8.mlp.linear_fc2.weight",
+      "layer": null,
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": "bfloat16",
+      "params": 2359296,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.8.norm1.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.8.norm1.weight",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.8.norm2.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.8.norm2.weight",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.9.attn.proj.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.9.attn.proj.weight",
+      "layer": null,
+      "shape": [
+        768,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 589824,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.9.attn.qkv.bias",
+      "layer": null,
+      "shape": [
+        2304
+      ],
+      "dtype": "bfloat16",
+      "params": 2304,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.9.attn.qkv.weight",
+      "layer": null,
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 1769472,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.9.mlp.linear_fc1.bias",
+      "layer": null,
+      "shape": [
+        3072
+      ],
+      "dtype": "bfloat16",
+      "params": 3072,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.9.mlp.linear_fc1.weight",
+      "layer": null,
+      "shape": [
+        3072,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 2359296,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.9.mlp.linear_fc2.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.9.mlp.linear_fc2.weight",
+      "layer": null,
+      "shape": [
+        768,
+        3072
+      ],
+      "dtype": "bfloat16",
+      "params": 2359296,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.blocks.9.norm1.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.9.norm1.weight",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.9.norm2.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.blocks.9.norm2.weight",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.merger.linear_fc1.bias",
+      "layer": null,
+      "shape": [
+        3072
+      ],
+      "dtype": "bfloat16",
+      "params": 3072,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.merger.linear_fc1.weight",
+      "layer": null,
+      "shape": [
+        3072,
+        3072
+      ],
+      "dtype": "bfloat16",
+      "params": 9437184,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.merger.linear_fc2.bias",
+      "layer": null,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.merger.linear_fc2.weight",
+      "layer": null,
+      "shape": [
+        1024,
+        3072
+      ],
+      "dtype": "bfloat16",
+      "params": 3145728,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "model.visual.merger.norm.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.merger.norm.weight",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.patch_embed.proj.bias",
+      "layer": null,
+      "shape": [
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 768,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0000000000000002,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.patch_embed.proj.weight",
+      "layer": null,
+      "shape": [
+        768,
+        3,
+        2,
+        16,
+        16
+      ],
+      "dtype": "bfloat16",
+      "params": 1179648,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "model.visual.pos_embed.weight",
+      "layer": null,
+      "shape": [
+        2304,
+        768
+      ],
+      "dtype": "bfloat16",
+      "params": 1769472,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "mtp.fc.weight",
+      "layer": null,
+      "shape": [
+        1024,
+        2048
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "mtp.layers.0.input_layernorm.weight",
+      "layer": 0,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "mtp.layers.0.mlp.down_proj.weight",
+      "layer": 0,
+      "shape": [
+        1024,
+        3584
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "mtp.layers.0.mlp.gate_proj.weight",
+      "layer": 0,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "mtp.layers.0.mlp.up_proj.weight",
+      "layer": 0,
+      "shape": [
+        3584,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 3670016,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "mtp.layers.0.post_attention_layernorm.weight",
+      "layer": 0,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "mtp.layers.0.self_attn.k_norm.weight",
+      "layer": 0,
+      "shape": [
+        256
+      ],
+      "dtype": "bfloat16",
+      "params": 256,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "mtp.layers.0.self_attn.k_proj.weight",
+      "layer": 0,
+      "shape": [
+        512,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 524288,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "mtp.layers.0.self_attn.o_proj.weight",
+      "layer": 0,
+      "shape": [
+        1024,
+        2048
+      ],
+      "dtype": "bfloat16",
+      "params": 2097152,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "mtp.layers.0.self_attn.q_norm.weight",
+      "layer": 0,
+      "shape": [
+        256
+      ],
+      "dtype": "bfloat16",
+      "params": 256,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "mtp.layers.0.self_attn.q_proj.weight",
+      "layer": 0,
+      "shape": [
+        4096,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 4194304,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999999,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "mtp.layers.0.self_attn.v_proj.weight",
+      "layer": 0,
+      "shape": [
+        512,
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 524288,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0,
+      "changed_rows": 0,
+      "changed_cols": 0
+    },
+    {
+      "name": "mtp.norm.weight",
+      "layer": null,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "mtp.pre_fc_norm_embedding.weight",
+      "layer": null,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 1.0,
+      "max_abs_delta": 0.0
+    },
+    {
+      "name": "mtp.pre_fc_norm_hidden.weight",
+      "layer": null,
+      "shape": [
+        1024
+      ],
+      "dtype": "bfloat16",
+      "params": 1024,
+      "changed": 0,
+      "touched": 0,
+      "frobenius_ratio": 0.0,
+      "cosine": 0.9999999999999998,
+      "max_abs_delta": 0.0
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "repo": "https://github.com/andyrdt/refusal_direction",
+  "commit": "9d852fae1a9121c78b29142de733cb1340770cc3",
+  "license": "Apache-2.0",
+  "files": [
+    "dataset/splits/harmful_train.json",
+    "dataset/splits/harmless_train.json"
+  ],
+  "sample": "random.Random(0).sample(rows, 64) per file"
+}
